@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+public class Board {
+
+    int size;
+
+    Board (){
+    }
+
+    public void initialize(int size) {
+        this.size = size;
+    }
+
+    public void show() {
+        initialize(size);
+        char[][] board = new char[this.size][this.size];
+        char fieldSymbol = '_';
+
+        for (int i = 0; i <= this.size - 1; i++) {
+            for (int j = 0; j <= this.size - 1; j++) {
+                board[i][j] = fieldSymbol;
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
